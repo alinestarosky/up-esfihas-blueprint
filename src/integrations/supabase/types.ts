@@ -43,6 +43,12 @@ export type Database = {
       }
       banner_promocional: {
         Row: {
+          agendamento_tipo: string
+          data_fim: string | null
+          data_inicio: string | null
+          dias_semana: string[]
+          hora_fim: string | null
+          hora_inicio: string | null
           ativo: boolean
           created_at: string
           id: string
@@ -53,6 +59,12 @@ export type Database = {
           valor_promocional: number | null
         }
         Insert: {
+          agendamento_tipo?: string
+          data_fim?: string | null
+          data_inicio?: string | null
+          dias_semana?: string[]
+          hora_fim?: string | null
+          hora_inicio?: string | null
           ativo?: boolean
           created_at?: string
           id?: string
@@ -63,6 +75,12 @@ export type Database = {
           valor_promocional?: number | null
         }
         Update: {
+          agendamento_tipo?: string
+          data_fim?: string | null
+          data_inicio?: string | null
+          dias_semana?: string[]
+          hora_fim?: string | null
+          hora_inicio?: string | null
           ativo?: boolean
           created_at?: string
           id?: string
